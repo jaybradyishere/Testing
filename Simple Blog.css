@@ -1,0 +1,259 @@
+* {
+    padding: 0px;
+    margin: 0 auto; 
+    max-width: 1200px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(0, 174, 255, 0.2), rgba(255, 255, 255, 0.6));
+}
+
+header {
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    border-bottom: 1px solid black;
+    max-width: 80%;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+.boxtxt {
+    max-width: 74%;
+    margin: 0 auto; /* Center the container */
+    text-align: justify;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+
+.musk1 {
+    justify-content: center;
+    margin-left: 55px;
+    background-color: rgba(249, 179, 0, 0.2);
+    margin-right: 55px;
+    font-weight: bold;
+}
+figcaption {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.publish1 {
+    text-align: right;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 60px;
+}
+
+#blogbtn1 {
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 80px;
+    color: rgba(104, 2, 92, 0.99);
+    border-radius: 50px;    
+}
+
+#blogbtn3 {
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 58px;
+    color: rgba(104, 2, 92, 0.99);
+    border-radius: 25px;    
+}
+
+#blogbtn2 {
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 102px;
+    color: rgba(104, 2, 92, 0.99);
+    border-radius: 50px;    
+}
+
+
+
+.blogheadertxt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: -250px;
+    text-overflow: clip;
+    font-style: italic;
+    line-height: 4;
+}
+
+.blogtbs {
+    text-align: right;
+    margin-bottom: -25px;
+}
+
+
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    margin: 600px -45px; 
+}
+
+#elon1, #elon2, #elon3  {
+    max-height: 400px; 
+    margin: 0px 55px; 
+    max-width: 325px;
+    min-width: 325px;
+}
+
+
+#logo {
+    width: max(100px, 200vw);
+    aspect-ratio: 35 / 4; 
+    margin: 0px -480px; 
+    margin-bottom: -65px;
+    text-align: left;
+}
+
+        /* Interactivity  */
+.aboutus:hover {
+    color: green;
+    transition: ease-in 0.5;
+}
+
+.contactus:hover {
+    color: green;
+    transition: ease-in 0.5;
+}
+
+.pricing:hover {
+    color: green;
+    transition: ease-in 0.5;
+}
+
+.pricing:active{
+    color: red;
+    transition: ease-out 0.5;
+}
+
+.aboutus:active{
+    color: red;
+    transition: ease-out 0.5;
+}
+
+.contactus:active{
+    color: red;
+    transition: ease-out 0.5;
+}
+
+    /* responsiveness on mobile */
+    @media (max-width: 768px) {
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 50px;
+            gap: 25px;
+        }
+    
+        #elon1, #elon2, #elon3 {
+            max-width: 768px;
+        }
+
+        #blogbtn2 {
+            margin-left: 55px;
+            margin-top: 60px;
+        }
+
+        #blogbtn3 {
+            margin-left: 55px;
+            margin-top: 55px;
+        }
+
+        #blogbtn1 {
+            margin-left: 55px;
+            margin-top: 70px;
+        }
+        
+            
+    
+        .boxtxt {
+            text-align: center;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+    
+        .musk1 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    
+        .blogheadertxt {
+            text-align: justify;
+            line-height: 2.5;
+            margin: 30px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .blogheadertxt {
+            text-align: justify;
+            line-height: 2.5;
+            margin: 15px;
+        }
+    
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            gap: 25px;
+        }
+    
+        #elon1, #elon2, #elon3 {
+            max-width: 400px;
+        }
+    
+        .blogtbs {
+            text-align: center;
+            margin-top: 0px;
+        }
+    
+        #blogbtn2 {
+            margin-left: 55px;
+            margin-top: 60px;
+        }
+
+        #blogbtn3 {
+            margin-left: 55px;
+            margin-top: 55px;
+        }
+
+        #blogbtn1 {
+            margin-left: 55px;
+            margin-top: 70px;
+        }
+            
+
+        #logo {
+            width: max(100px, 100vw);
+            aspect-ratio: 35 / 4; 
+            margin: 0 auto; 
+        }
+    
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            max-width: 80%;
+        }
+    }
+    
