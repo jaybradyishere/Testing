@@ -7,6 +7,7 @@
 
 body {
     background: linear-gradient(180deg, rgba(0, 174, 255, 0.2), rgba(255, 255, 255, 0.6));
+
 }
 
 a {
@@ -23,7 +24,6 @@ justify-content: center;
 text-align: center;
 background-color: #2a2a40;
 color: aliceblue;
-box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.5);
 }
 
         /* Figure images and text */
@@ -34,10 +34,11 @@ box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction:row;
     margin: 60px 1px;
-    margin-top: 300px; 
+    margin-top: 200px; 
     width: 100%;
     gap: 350px;
     justify-content: space-evenly;
+    overflow-y: scroll;
 }
 
 .boxtxt {
@@ -45,7 +46,7 @@ box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.5);
     flex-shrink: 1;
     flex-basis: 300px;
     width: 300px;
-    height: 131px;
+    height: 150px;
     overflow: hidden;
     word-spacing: normal;
     text-align: center;
@@ -59,7 +60,7 @@ box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.5);
 .musk1:not(input) {
     background-color: rgba(249, 179, 0, 0.2);
     font-weight: bold;
-    width: 300px;
+    width: x;
     margin-top: 5px;
 }
 
@@ -118,21 +119,16 @@ h1 {
 .blogtbs {
     text-align: right;
     max-width: 95%;
-    position: relative;
-    top: 95px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 #logo {
-    max-width: 400px;
-    max-height: 200px;
-    aspect-ratio: 35 / 4; 
-    text-align: left;
-    max-width: 95%;
-    position: absolute;
-}
-
-header {
-    margin: -35px auto;
+    max-width: 35%;
+    max-height: 90%;
+    height: 200px; 
+    aspect-ratio: 35 / 4;
+    overflow: hidden;
 }
 
         /* List stiff at footer*/
@@ -175,52 +171,23 @@ footer {
     transition: ease-out 0.5;
 }
 
-@media only screen and (max-width: 767px) {
-    /* Styles for mobile devices */
-    * {
-       box-sizing: border-box;
-       overflow-x: hidden;   
-    }
-    
-    .blog-container {
-        /* overflow-y: scroll; */
-    }
-  }
-  
-  
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Styles for tablets */
-    * {
-        box-sizing: border-box;
-        overflow: hidden;   
-     }
-     .blog-container {
-        max-width: 100px;
-        max-height: 100px;
-        overflow-y: scroll;
-     }
-    }
-  
-  
-  @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-    /* Styles for small laptops */
-    * {
-        box-sizing: border-box;
-        overflow-x: hidden;   
-     }
-  }
-  
-  
-  @media only screen and (min-width: 1280px) and (max-width: 1439px) {
-    /* Styles for medium laptops */
-    * {
-        box-sizing: border-box;
-        overflow-x: hidden;   
-     }
-  }
-  
-  
-  @media only screen and (min-width: 1440px) {
-    /* Styles for large laptops and desktops */
 
-  }
+
+    /* special responsiveness */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+    
